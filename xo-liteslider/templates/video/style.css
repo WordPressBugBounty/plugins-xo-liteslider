@@ -1,0 +1,77 @@
+/*
+XO Slider: Video template.
+*/
+
+.xo-slider-template-video .swiper-button-next.swiper-button-white,
+.xo-slider-template-video .swiper-button-prev.swiper-button-white {
+	--swiper-navigation-color: #ffffff;
+}
+
+.xo-slider-template-video .swiper-pagination-white {
+	--swiper-pagination-color: #ffffff;
+}
+
+.xo-slider-template-video .swiper-container .swiper-slide {
+	position: relative;
+	width: 100%;
+}
+
+.xo-slider-template-video .swiper-container .swiper-slide::before {
+	content: " ";
+	display: block;
+	padding-top: 56.25%;
+}
+
+.xo-slider-template-video .swiper-slide img,
+.xo-slider-template-video .swiper-slide video,
+.xo-slider-template-video .swiper-slide iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* YouTube */
+
+.xo-slider-template-video .gallery-main .swiper-slide .youtube-wrap {
+    position: relative;
+    aspect-ratio: 16/9;
+    overflow: hidden;
+}
+
+.xo-slider-template-video .gallery-main .swiper-slide .youtube-wrap iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    aspect-ratio: 1/1;
+    border: none;
+}
+
+/* Content */
+
+.xo-slider-template-video .swiper-wrapper {
+	position: relative;
+}
+
+.xo-slider-template-video .swiper-slide .slide-content {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	pointer-events: none;
+}
+
+/* Pagination */
+
+.xo-slider-template-video .swiper-pagination {
+	pointer-events: none;
+}
+
+.xo-slider-template-video .swiper-pagination-bullet {
+	pointer-events: auto;
+}
